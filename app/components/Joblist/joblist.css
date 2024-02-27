@@ -17,5 +17,8 @@
 
 .my-text-primary {
     color: #064EA4;
-    font-variant-caps: all-small-caps;
+  }
+
+.my_text-light{
+    color: #D7E7FB;
   }

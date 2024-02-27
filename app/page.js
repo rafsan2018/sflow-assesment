@@ -7,7 +7,7 @@ import Footer from "./components/Footer/footer";
 
 export default function Home() {
   return (
-    <main className={''}>
+    <main className={"container-fluid g-0"}>
       <Header/>
       <Banner/>
       <Clients/>

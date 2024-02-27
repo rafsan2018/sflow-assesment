@@ -12,7 +12,7 @@ function Joblist() {
       tag: 'Python',
       jobtitle: 'Software Engineer',
       location: 'London',
-      salary: '65K',
+      salary: '£65,000',
       jobinfo: 'Odio mi amet commodo convallis nunc.<br/>Tincidunt mauris eu egestas eget in <br/>aliquam',
       buttontext: 'View this job',
       posteddate: 'Posted on 29/08/2023',
@@ -25,7 +25,7 @@ function Joblist() {
       tag: 'Phyton',
       jobtitle: 'Software Engineer',
       location: 'London',
-      salary: '65K',
+      salary: '£65,000',
       jobinfo: 'Odio mi amet commodo convallis nunc.<br/>Tincidunt mauris eu egestas eget in <br/>aliquam',
       buttontext: 'View this job',
       posteddate: 'Posted on 29/08/2023',
@@ -38,7 +38,7 @@ function Joblist() {
       tag: 'Phyton',
       jobtitle: 'Software Engineer',
       location: 'London',
-      salary: '65K',
+      salary: '£65,000',
       jobinfo: 'Odio mi amet commodo convallis nunc.<br/>Tincidunt mauris eu egestas eget in <br/>aliquam',
       buttontext: 'View this job',
       posteddate: 'Posted on 29/08/2023',
@@ -55,44 +55,52 @@ function Joblist() {
        <div className="d-flex container " style={{gap: '100px'}}>
         {joblists.map((item,i)=>(
           <div key={i} className="card" style={{backgroundColor: `${item.bgcolor}`,borderRadius:'30px'}}>
-            <div className="card-body d-flex flex-column" style={{padding: '40px',gap:'10px'}}>
+            <div className="card-body d-flex flex-column" style={{padding: '30px',gap:'10px'}}>
               <div className="d-flex bg-white  align-items-center" style={{height:'24px',width:'75px',gap:'5px',
               borderRadius:'5px',padding:'3px',color:'#064EA4',fontSize:'14px',lineHeight:'19.7px',fontWeight:'400',}}>
                 <img src='/pythonlogo.png' className="" style={{position:'',top:'5.65px',left:'5.74px',color:'#064EA4',
                   width:'18px',height:'18px'}}/>
                 <span className="" >{item.tag}</span>
               </div>
-              <h4 className={item.id == 2 ? 'text-light' : 'my-text-primary'} 
-              style={{fontSize:'30px',lineHeight:'36.63px',letterSpacing: '-1px',color:'#064EA4'}}>Software Engineer</h4>
+              <h4 
+                  style={{fontSize:'30px',lineHeight:'36.63px',letterSpacing: '-1px',
+                 color:`${item.id == 2 ? '#FFFFFF' : '#064EA4'}`}}>
+                {item.jobtitle}
+              </h4>
 
               <div className="d-flex card-text align-items-center" style={{width:'24px',height:'24px',gap:'10px'}}>
                 <span>
                   <FaLocationDot className={item.id == 2 ? 'text-light' : 'my-text-primary'} color="#064EA4"/>
                 </span>
-                <span className={item.id == 2 ? 'text-light' : 'my-text-primary'}  style={{fontSize:'16px',fontWeight: 400,lineHeight:'24px',color:'#064EA4',height:'20px'}}>London</span>
+                <span className={item.id == 2 ? 'text-light' : 'my-text-primary'}  
+                  style={{fontSize:'16px',fontWeight: 400,lineHeight:'24px',color:'#064EA4',height:'20px'}}>
+                  {item.location}
+                </span>
               </div>
               <div className="d-flex card-text align-items-center" style={{width:'24px',height:'24px',gap:'10px'}}>
                 <span>
                   <RiCashLine className={item.id == 2 ? 'text-light' : 'my-text-primary'} color="#064EA4"/>
                 </span>
                 <span className={item.id == 2 ? 'text-light' : 'my-text-primary'}  style={{fontSize:'16px',fontWeight: 400,lineHeight:'24px',color:'#064EA4',height:'20px'}}>
-                  £65,000
+                 {item.salary}
                 </span>
               </div>
 
-              <div className={item.id == 2 ? 'text-light' : 'my-text-primary'} style={{fontSize:'16px',lineHeight:'24px',color:'#064EA4'}} dangerouslySetInnerHTML={{ __html: 
-                        `<p className="card-text" >
+              <div style={{fontSize:'16px',lineHeight:'24px',
+              color:`${item.id == 2 ? '#FFFFFF' : '#064EA4'}`}} dangerouslySetInnerHTML={{ __html: 
+                        `<p className="card-text">
                             ${item.jobinfo}
-                   </p>`
+                      </p>`
               }} />
               <div className="d-flex justify-content-between mt-3">
                 <button  className="btn btn-light btn-sm b-0 font-weight-500 bg-light "
-                style={{width:'293px',height:'54px',borderRadius:'30px',color:'#064EA4',fontSize:'16px',
-                lineHeight:'24px',fontWeight:500}}>
-                  View this job</button>
+                  style={{width:'293px',height:'54px',borderRadius:'30px',color:'#064EA4',fontSize:'16px',
+                  lineHeight:'24px',fontWeight:500}}>
+                  {item.buttontext}
+                </button>
               </div>
               <span className={item.id == 2 ? 'text-light' : 'my-text-primary'} style={{color:'#064EA4',fontSize:'16px',
-                lineHeight:'24px',fontWeight:400}}> Posted on 29/08/2023</span>
+                lineHeight:'24px',fontWeight:400}}> {item.posteddate}</span>
             </div>
             
           </div>

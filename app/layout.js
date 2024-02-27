@@ -23,7 +23,7 @@ export default function RootLayout({ children }) {
             }
           `}</style>
       </head>
-      <body className="container-fluid g-0">
+      <body className={roboto.className}>
         <ImportBsJS/>
         {children}
         </body>

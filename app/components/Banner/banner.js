@@ -12,11 +12,11 @@ function Banner() {
   <div className="d-flex text-white " style={{ width: "1200px", height: "555px", gap: "60px", isolation: "isolate", 
   alignItems: 'center', alignSelf: 'center',position: 'relative' }}>
     <div className="flex-grow-1 ">
-      <div className='d-flex flex-column ' style={{ gap: '60px' }}>
+      <div className='d-flex flex-column ' style={{ gap: '20px' }}>
         <span className='fw-normal custom-font2 '>Software Recruitment Specialists</span>
         <span className='custom-font3'>Elevate your career</span>
         <div className='d-flex '>
-          <input type="text" className='inputer2' placeholder='E.g. networking' />
+          <input type="text" className='inputform' placeholder='E.g. networking' />
           <button className='button2 border-0 custom-font2 fw-bold'>Search jobs</button>
         </div>
       </div>
