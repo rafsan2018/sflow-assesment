@@ -1,0 +1,21 @@
+.sectionspace {
+    padding: 80px 120px;
+    background-color: #D7E7FB;
+}
+
+.jobsheader {
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 84px;
+    letter-spacing: -1px;
+    color: #0E2152;
+}
+
+.font-weight-500 {
+    font-weight: 500;
+  }
+
+.my-text-primary {
+    color: #064EA4;
+    font-variant-caps: all-small-caps;
+  }
