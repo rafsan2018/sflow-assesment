@@ -9,7 +9,7 @@ function Banner() {
     </svg>
   </div>
 
-  <div className="d-flex text-white " style={{ width: "1200px", height: "555px", gap: "60px", isolation: "isolate", 
+  <div className="d-flex text-white" style={{ width: "1200px", height: "555px", gap: "60px", isolation: "isolate", 
   alignItems: 'center', alignSelf: 'center',position: 'relative' }}>
     <div className="flex-grow-1 ">
       <div className='d-flex flex-column ' style={{ gap: '20px' }}>
