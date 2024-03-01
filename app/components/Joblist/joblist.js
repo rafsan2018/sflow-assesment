@@ -52,7 +52,7 @@ function Joblist() {
        <div>
         <h2 className='jobsheader'>Latest Jobs</h2>
        </div>
-       <div className="d-flex container " style={{gap: '100px'}}>
+       <div className="d-flex flex-wrap justify-content-between align-items-center flex-column flex-md-row " style={{gap: '100px'}}>
         {joblists.map((item,i)=>(
           <div key={i} className="card" style={{backgroundColor: `${item.bgcolor}`,borderRadius:'30px'}}>
             <div className="card-body d-flex flex-column" style={{padding: '30px',gap:'10px'}}>
