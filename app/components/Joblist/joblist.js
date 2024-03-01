@@ -1,8 +1,8 @@
-import './Joblist.css'
 import { FaLocationDot } from "react-icons/fa6";
 import { RiCashLine } from "react-icons/ri";
 import { FaArrowAltCircleLeft } from "react-icons/fa"
-import { FaArrowAltCircleRight } from "react-icons/fa"
+import { FaArrowAltCircleRight } from "react-icons/fa";
+import '../Joblist/joblist.css'
 
 function Joblist() {
 
