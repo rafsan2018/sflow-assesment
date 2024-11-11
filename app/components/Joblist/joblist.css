@@ -22,3 +22,9 @@
 .my_text-light{
     color: #D7E7FB;
   }
+
+  @media (max-width: 768px) {
+    .jobsheader {
+      font-size: 30px;
+    }
+  }
